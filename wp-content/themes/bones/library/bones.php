@@ -368,4 +368,15 @@ function bones_get_the_author_posts_link() {
 	return $link;
 }
 
-?>
+/*
+ * Show recettes on homepage
+ */
+add_filter( 'pre_get_posts', 'get_recettes' );
+
+function get_recettes( $query ) {
+
+	if ( is_home() && $query->is_main_query() )
+		$query->set( 'post_type', array( 'recettes' ) );
+
+	return $query;
+}

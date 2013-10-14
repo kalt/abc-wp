@@ -13,13 +13,11 @@
 								<header class="article-header">
 
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
-									<p class="byline vcard"><?php
-										printf( __( 'Posted <time class="updated" datetime="%1$s" pubdate>%2$s</time> by <span class="author">%3$s</span> <span class="amp">&amp;</span> filed under %4$s.', 'bonestheme' ), get_the_time( 'Y-m-j' ), get_the_time( get_option('date_format')), bones_get_the_author_posts_link(), get_the_category_list(', ') );
-									?></p>
 
 								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix" itemprop="articleBody">
+									<?php the_post_thumbnail( 'large' ); ?>
 									<?php the_content(); ?>
 								</section> <!-- end article section -->
 
@@ -31,6 +29,21 @@
 								<?php comments_template(); ?>
 
 							</article> <!-- end article -->
+
+							<aside>
+								<ul>
+								<?php if (get_field('weight') > 0): ?>
+									<li>Poids du sachet : <?php echo number_format(get_field('weight'), 0, ',', ' '); ?>g</li>
+								<?php endif; ?>
+								<?php if (get_field('unit_price') > 0): ?>
+									<li>Prix du sachet : <?php echo number_format(get_field('unit_price'), 2, ',', ' '); ?> €</li>
+								<?php endif; ?>
+								<?php if (get_field('price_per_kilo') > 0): ?>
+									<li>Prix au kilo : <?php echo number_format(get_field('price_per_kilo'), 2, ',', ' '); ?> €</li>
+								<?php endif; ?>
+								</ul>
+								
+							</aside>
 
 						<?php endwhile; ?>
 
