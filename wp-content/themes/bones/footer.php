@@ -2,9 +2,17 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<nav role="navigation">
-							<?php bones_footer_links(); ?>
-					</nav>
+					<div>
+						<p>Envoyez-moi un email à l'adresse <a href="mailto:"></a></p>
+					</div>
+
+					<div>
+						
+					</div>
+
+					<div>
+						
+					</div>
 
 				</div> <!-- end #inner-footer -->
 

@@ -11,17 +11,19 @@
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
 
 								<header class="article-header">
-
-									<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
+									<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large' ); ?></a>
 								</header> <!-- end article header -->
 
 								<section class="entry-content clearfix">
+									<div>
+										<?php the_terms($post->ID, 'categories'); ?>
+									</div>
 
-									<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large' ); ?></a>
+									<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
 
-									<?php the_excerpt(); ?>
-
+									<div class="entry-excerpt">
+										<?php the_excerpt(); ?>
+									</div>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
