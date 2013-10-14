@@ -19,7 +19,8 @@ body {
 	font-family: $serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: #333;
+	background: url(../images/grunge_light.jpg);
 }
 
 /********************
@@ -152,7 +153,24 @@ HEADER STYLES
 
 .header {}
 
-	#logo {}
+	#logo-wrapper {
+		// background: url(../images/grunge_dark.jpg);
+		width: 100%;
+	}
+
+	#logo-link {
+		display: block;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		// margin-bottom: -100px;
+	}
+
+	#logo-img {
+		max-width: 100%;
+		height: auto;
+	}
 
 /*********************
 NAVIGATION STYLES
