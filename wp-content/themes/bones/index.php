@@ -10,12 +10,12 @@
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
 
-								<header class="article-header">
-									<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'large' ); ?></a>
-								</header> <!-- end article header -->
-
 								<section class="entry-content clearfix">
-									<div>
+									<header class="article-header">
+										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'full' ); ?></a>
+									</header> <!-- end article header -->
+
+									<div class="article-categories">
 										<?php the_terms($post->ID, 'categories'); ?>
 									</div>
 
@@ -25,11 +25,6 @@
 										<?php the_excerpt(); ?>
 									</div>
 								</section> <!-- end article section -->
-
-								<footer class="article-footer">
-
-								</footer> <!-- end article footer -->
-
 							</article> <!-- end article -->
 
 							<?php endwhile; ?>

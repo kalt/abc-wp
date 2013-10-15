@@ -2,16 +2,18 @@
 
 				<div id="inner-footer" class="wrap clearfix">
 
-					<div>
-						<p>Envoyez-moi un email à l'adresse <a href="mailto:"></a></p>
+					<div class="contact-page">
+						<?php $contactPage = get_page_by_title("contact"); ?>
+						<p>Passez commande sur la page <a href="<?php echo get_page_link($contactPage->ID); ?>">Contact</a></p>
 					</div>
 
-					<div>
-						
+					<div class="contact-email">
+						<p>Envoyez un email à l'adresse :<br>
+						<a href="mailto:<?php echo antispambot('contact@amaretti-biscuits-cookies.com', 1); ?>">contact@amaretti-biscuits-cookies.com</a></p>
 					</div>
 
-					<div>
-						
+					<div class="contact-social">
+						<p>Suivez-moi sur <a href="http://www.facebook.com/amaretti.biscuits.cookies/" target="_blank">Facebook</a></p>
 					</div>
 
 				</div> <!-- end #inner-footer -->

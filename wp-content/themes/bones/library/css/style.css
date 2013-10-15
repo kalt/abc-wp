@@ -876,7 +876,7 @@ LAYOUT & GRID STYLES
 *********************/
 /* line 71, ../scss/_base.scss */
 .wrap {
-  width: 96%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1394,6 +1394,42 @@ FOOTER STYLES
 /* line 778, ../scss/_base.scss */
 .footer {
   clear: both;
+  background-color: #472013;
+  padding: 4em 0;
+}
+
+/* line 786, ../scss/_base.scss */
+.contact-page,
+.contact-email,
+.contact-social {
+  width: 30%;
+  font-size: 1.2em;
+  color: #cdad9a;
+}
+/* line 790, ../scss/_base.scss */
+.contact-page a,
+.contact-email a,
+.contact-social a {
+  text-decoration: none;
+  border-bottom: 1px dotted;
+}
+/* line 793, ../scss/_base.scss */
+.contact-page a:hover,
+.contact-email a:hover,
+.contact-social a:hover {
+  color: white;
+}
+
+/* line 799, ../scss/_base.scss */
+.contact-page,
+.contact-email {
+  float: left;
+  margin-right: 5%;
+}
+
+/* line 803, ../scss/_base.scss */
+.contact-social {
+  float: right;
 }
 
 /*

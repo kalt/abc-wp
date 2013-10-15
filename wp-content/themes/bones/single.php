@@ -9,16 +9,18 @@
 						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-								<header class="article-header">
-
+								<section class="entry-content clearfix" itemprop="articleBody">
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 
-								</header> <!-- end article header -->
+									<?php the_post_thumbnail( 'full' ); ?>
 
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_post_thumbnail( 'large' ); ?>
-									<?php the_content(); ?>
+									<div class="article-categories">
+										<?php the_terms($post->ID, 'categories'); ?>
+									</div>
+								
+									<div class="entry-description">
+										<?php the_content(); ?>
+									</div>
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
