@@ -53,7 +53,7 @@
 
 								<section class="entry-content clearfix">
 									<header class="article-header">
-										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'full' ); ?></a>
+										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-wide-l' ); ?></a>
 									</header> <!-- end article header -->
 
 									<div class="article-categories">
