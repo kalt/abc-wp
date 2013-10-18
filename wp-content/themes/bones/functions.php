@@ -48,8 +48,13 @@ require_once( 'library/translation/translation.php' ); // this comes turned off 
 /************* THUMBNAIL SIZE OPTIONS *************/
 
 // Thumbnail sizes
-add_image_size( 'bones-thumb-600', 600, 150, true );
-add_image_size( 'bones-thumb-300', 300, 100, true );
+add_image_size( 'bones-thumb-wide-xl', 1280, 300, true );
+add_image_size( 'bones-thumb-classic-l', 960, 540, true );
+add_image_size( 'bones-thumb-wide-l', 960, 100, true );
+add_image_size( 'bones-thumb-classic-m', 640, 360, true );
+add_image_size( 'bones-thumb-wide-m', 640, 150, true );
+add_image_size( 'bones-thumb-classic-s', 320, 180, true );
+add_image_size( 'bones-thumb-wide-s', 320, 75, true );
 /*
 to add more sizes, simply copy a line from above
 and change the dimensions & name. As long as you

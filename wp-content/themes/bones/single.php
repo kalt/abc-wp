@@ -12,7 +12,7 @@
 								<section class="entry-content clearfix" itemprop="articleBody">
 									<h1 class="entry-title single-title" itemprop="headline"><?php the_title(); ?></h1>
 
-									<?php the_post_thumbnail( 'full' ); ?>
+									<?php the_post_thumbnail( 'bones-thumb-wide-xl' ); ?>
 
 									<div class="article-categories">
 										<?php the_terms($post->ID, 'categories'); ?>
