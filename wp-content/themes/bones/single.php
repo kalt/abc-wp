@@ -21,6 +21,13 @@
 									<div class="entry-description">
 										<?php the_content(); ?>
 									</div>
+
+									<?php if (get_field('ingredients') != ""): ?>
+									<div class="entry-ingredients">
+										<?php echo get_field('ingredients'); ?>
+									</div>
+									<?php endif; ?>
+									
 								</section> <!-- end article section -->
 
 								<footer class="article-footer">
