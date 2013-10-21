@@ -54,9 +54,16 @@
 
 					<?php // bloginfo('description'); ?>
 
-					<!--<nav role="navigation">
-						<?php bones_main_nav(); ?>
-					</nav>-->
+					<nav role="navigation" class="nav">
+						<ul>
+							<li><a href="<?php echo home_url(); ?>">Accueil</a></li>
+							<li><a href="/categories/gourmands">Les gourmands</a></li>
+							<li><a href="/categories/moelleux">Les moelleux</a></li>
+							<li><a href="/categories/croquants">Les croquants</a></li>
+							<?php $contactPage = get_page_by_title("contact"); ?>
+							<li><a href="<?php echo get_page_link($contactPage->ID); ?>">Contact</a></li>
+						</ul>
+					</nav>
 
 				</div> <!-- end #inner-header -->
 
