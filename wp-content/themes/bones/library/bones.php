@@ -370,13 +370,19 @@ function bones_get_the_author_posts_link() {
 
 /*
  * Show recettes on homepage
+ * Set order for recettes
  */
 add_filter( 'pre_get_posts', 'get_recettes' );
 
-function get_recettes( $query ) {
+function get_recettes($query) {
+	if (is_home() && $query->is_main_query()) {
+		$query->set('post_type', array('recettes'));
+	}
 
-	if ( is_home() && $query->is_main_query() )
-		$query->set( 'post_type', array( 'recettes' ) );
+	if ((is_tax('categories') || is_home()) && $query->is_main_query()) {
+		$query->set('orderby', 'menu_order');
+		$query->set('order', 'ASC');
+	}
 
 	return $query;
 }
