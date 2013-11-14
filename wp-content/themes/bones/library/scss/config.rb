@@ -28,3 +28,6 @@ output_style = :expanded
 
 # don't touch this
 preferred_syntax = :scss
+
+# Includes
+require "susy"

@@ -12,6 +12,15 @@ and will be used across all viewports.
 ******************************************************************/
 
 /*********************
+SUSY SETTINGS
+*********************/
+
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 1.618em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+/*********************
 GENERAL STYLES
 *********************/
 
@@ -69,8 +78,8 @@ LAYOUT & GRID STYLES
 *********************/
 
 .wrap {
-	width: 100%;
-	margin: 0 auto;
+	@include container;
+	// @include susy-grid-background;
 }
 
 /*********************
