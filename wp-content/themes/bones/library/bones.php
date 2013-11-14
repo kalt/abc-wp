@@ -382,6 +382,7 @@ function get_recettes($query) {
 	if ((is_tax('categories') || is_home()) && $query->is_main_query()) {
 		$query->set('orderby', 'menu_order');
 		$query->set('order', 'ASC');
+		$query->set('posts_per_page', '20');
 	}
 
 	return $query;
