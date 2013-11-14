@@ -785,6 +785,7 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 
+
 .footer {
 	clear: both;
 	background-color: #472013;
@@ -836,3 +837,16 @@ FOOTER STYLES
 
 	.copyright {}
 
+
+/*********************
+HOME PAGE STYLES
+*********************/
+.arguments {
+	@include span-columns($total-columns omega);
+	@include trailer(2);
+}
+
+.argument {
+	@include span-columns(4);
+	@include nth-omega(3n);
+}

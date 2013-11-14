@@ -1409,14 +1409,14 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 788, ../scss/_base.scss */
+/* line 789, ../scss/_base.scss */
 .footer {
   clear: both;
   background-color: #472013;
   padding: 4em 0;
 }
 
-/* line 796, ../scss/_base.scss */
+/* line 797, ../scss/_base.scss */
 .contact-page,
 .contact-email,
 .contact-social {
@@ -1424,28 +1424,28 @@ FOOTER STYLES
   font-size: 1.2em;
   color: #cdad9a;
 }
-/* line 800, ../scss/_base.scss */
+/* line 801, ../scss/_base.scss */
 .contact-page a,
 .contact-email a,
 .contact-social a {
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-/* line 803, ../scss/_base.scss */
+/* line 804, ../scss/_base.scss */
 .contact-page a:hover,
 .contact-email a:hover,
 .contact-social a:hover {
   color: white;
 }
 
-/* line 809, ../scss/_base.scss */
+/* line 810, ../scss/_base.scss */
 .contact-page,
 .contact-email {
   float: left;
   margin-right: 5%;
 }
 
-/* line 813, ../scss/_base.scss */
+/* line 814, ../scss/_base.scss */
 .contact-social {
   float: right;
 }
@@ -1460,6 +1460,32 @@ override these styles for the desktop
 view.
 */
 /* end .footer-links */
+/*********************
+HOME PAGE STYLES
+*********************/
+/* line 844, ../scss/_base.scss */
+.arguments {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+  margin-bottom: 3em;
+}
+
+/* line 849, ../scss/_base.scss */
+.argument {
+  width: 31.1415%;
+  float: left;
+  margin-right: 3.28774%;
+  display: inline;
+}
+/* line 184, C:/Ruby192/lib/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
+.argument:nth-child(3n) {
+  float: right;
+  margin-right: 0;
+}
+
 /*
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's

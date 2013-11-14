@@ -6,6 +6,26 @@
 
 						<div id="main" class="eightcol first clearfix" role="main">
 
+							<div class="arguments">
+								
+								<div class="argument" id="argument-1">
+									<h3>Une production locale</h3>
+									<p>Tous les gâteaux sont faits maison à Hérouville Saint Clair en Normandie.</p>
+								</div>
+
+								<div class="argument" id="argument-2">
+									<h3>Sans additif</h3>
+									<p>Nous n'utilisons aucun conservateur, aucun colorant.</p>
+								</div>
+
+								<div class="argument" id="argument-3">
+									<h3>Des produits simples et sains</h3>
+									<p>Farine, oeuf, sucre... uniquement des produits simples pour un goût authentique.</p>
+								</div>
+
+							</div>
+
+
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
