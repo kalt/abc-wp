@@ -1,0 +1,223 @@
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+
+body {
+	font-family: $font-main;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #333;
+	background: url(../images/grunge_light.jpg);
+}
+
+.wrap {
+	@include container;
+	// @include susy-grid-background;
+}
+
+
+
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $link-color;
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: $font-alt;
+	text-rendering: optimizelegibility;
+	font-weight: 500;
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.333em;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+.header {}
+
+	#logo-wrapper {
+		// background: url(../images/grunge_dark.jpg);
+		width: 100%;
+	}
+
+	#logo-link {
+		display: block;
+		width: 200px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		// margin-bottom: -100px;
+	}
+
+	#logo-img {
+		max-width: 100%;
+		height: auto;
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+.nav {
+	background-color: #eee;
+	ul {
+		@include span-columns($total-columns omega);
+		@include inline-block-list;
+	}
+	li {
+		a {
+			display: block;
+			text-decoration: none;
+			padding: 10px 20px;
+			background-color: #eee;
+			border-bottom: 1px solid #ccc;
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+
+			}
+		}
+
+	} /* end .menu li */
+
+} /* end .nav */
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+#content {
+	margin-top: 2.2em;
+}
+
+
+			dd {
+				margin-left: 0;
+				font-size: 0.9em;
+				color: #787878;
+				margin-bottom: 1.5em;
+			}
+
+			img {
+				margin: 0 0 1.5em 0;
+				max-width: 100%;
+				height: auto;
+			}
+
+			video, object {
+				max-width: 100%;
+				height: auto;
+			}
+
+			pre {
+				background: #eee;
+				border: 1px solid #cecece;
+				padding: 10px;
+			}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+
+.footer {
+	@include span-columns($total-columns omega);
+	background-color: #472013;
+	padding: 4em 0;
+}
+
+.footer-block {
+	@include span-columns($total-columns / 3);
+	@include nth-omega(3n);
+	font-size: 1.2em;
+	color: #cdad9a;
+	a {
+		text-decoration: none;
+		border-bottom: 1px dotted;
+		&:hover {
+			color: white;
+		}
+	}
+}
+
+	/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+	.footer-links {
+
+		ul {
+
+			li {}
+
+		}
+
+	} /* end .footer-links */
+
+
+	.copyright {}

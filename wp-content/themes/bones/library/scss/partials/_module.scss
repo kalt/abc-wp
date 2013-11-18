@@ -1,0 +1,9 @@
+.arguments {
+	@include span-columns($total-columns omega);
+	@include trailer(2);
+}
+
+.argument {
+	@include span-columns($total-columns / 3);
+	@include nth-omega(3n);
+}

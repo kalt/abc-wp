@@ -1,0 +1,17 @@
+
+
+
+// Susy
+$total-columns  : 15;
+$column-width   : 3em;
+$gutter-width   : $column-width / 1.618;
+$grid-padding   : $gutter-width / 2;
+
+// Typography
+$font-main: "Habibi", Times New Roman, Times, serif;
+$font-alt:  "Raleway", Helvetica, Arial, sans-serif;
+
+
+// Colors
+$link-color:  #d53612;
+$link-hover: darken($link-color, 9%);
