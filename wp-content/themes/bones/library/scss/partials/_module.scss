@@ -1,9 +1,142 @@
+// ------------------------------------------------------------------
+// Reassurance
 .arguments {
 	@include span-columns($total-columns omega);
 	@include trailer(2);
 }
-
 .argument {
-	@include span-columns($total-columns / 3);
-	@include nth-omega(3n);
+	@include span-columns($total-columns omega);
+	padding: 1em;
 }
+.argument-title {
+}
+
+// ------------------------------------------------------------------
+// Preview
+.previews {
+	@include span-columns($total-columns omega);
+}
+.preview {
+	@include trailer(2);
+	@include border-bottom-radius(1em);
+	background: $beige;
+	.preview-header {
+		position: relative;
+		.price {
+			@include border-radius(50%);
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			bottom: -30px;
+			left: 50%;
+			margin-left: -35px;
+			color: $white;
+			background-color: $brown;
+			text-align: center;
+			line-height: 4;
+			.currency {
+				@include adjust-font-size-to(12px);
+				color: $orange;
+			}
+		}
+	}
+}
+
+.preview-image {
+	a, img {
+		display: block;
+	}
+	border-bottom: 7px solid $brown;
+}
+
+.preview-title {
+	@include adjust-font-size-to(14px);
+	font-weight: bold;
+	text-align: center;
+	padding: 2.25em 0 .75em;
+	letter-spacing: 1px;
+	a {
+		text-decoration: none;
+	}
+}
+
+// ------------------------------------------------------------------
+// Entry
+.entry {
+	@include span-columns($total-columns omega);
+	@include trailer(1.5);
+}
+.entry-image {
+	@include span-columns($total-columns omega);
+	@include trailer(1.5);
+	border-bottom: 15px solid $brown;
+	img {
+		display: block;
+	}
+}
+.entry-header {
+	@include span-columns($total-columns omega);
+	@include trailer(1.5);
+	.entry-title {
+		color: $orange;
+		text-align: center;
+	}
+	.entry-categories {
+		text-align: center;
+	}
+}
+.entry-description,
+.entry-ingredients {
+	@include span-columns($total-columns omega);
+	@include trailer(1);
+}
+
+
+/*
+ * ******************************************************************
+ * BREAKPOINTS
+ * ******************************************************************
+ */
+
+// ------------------------------------------------------------------
+// Small
+@include at-breakpoint($breakpoint-small) {
+	.argument {
+		@include span-columns($total-columns / 3);
+		@include nth-omega(3n);
+	}
+
+	.preview {
+		@include span-columns($total-columns / 3);
+		@include nth-omega(3n);
+	}
+}
+
+// ------------------------------------------------------------------
+// Medium
+@include at-breakpoint($breakpoint-medium) {
+	.argument,
+	.preview {
+		@include span-columns($total-columns / 3);
+	}
+}
+
+// ------------------------------------------------------------------
+// Large
+@include at-breakpoint($breakpoint-large) {
+	.argument,
+	.preview {
+		@include span-columns($total-columns / 3);
+	}
+
+	.entry-content {
+		@include span-columns(9);
+		@include squish(3,3);
+	}
+
+	.entry-meta {
+		@include span-columns(9);
+		@include squish(3,3);
+	}
+}
+

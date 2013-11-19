@@ -569,144 +569,85 @@ dd {
   list-style: none;
 }
 
-/* line 1, ../scss/partials/_layout.scss */
+/* line 61, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* line 3, ../scss/partials/_layout.scss */
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 6, ../scss/partials/_layout.scss */
+/* line 7, ../scss/partials/_layout.scss */
 body {
   font-family: "Habibi", Times New Roman, Times, serif;
-  font-size: 100%;
-  line-height: 1.5;
-  color: #333;
   background: url(../images/grunge_light.jpg);
 }
 
-/* line 14, ../scss/partials/_layout.scss */
-.wrap {
+/* line 12, ../scss/partials/_layout.scss */
+.container {
   *zoom: 1;
-  max-width: 70.95797em;
-  _width: 70.95797em;
+  max-width: 27.2707em;
+  _width: 27.2707em;
   padding-left: 0.92707em;
   padding-right: 0.92707em;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 38, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.wrap:after {
+.container:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/*********************
-LINK STYLES
-*********************/
-/* line 26, ../scss/partials/_layout.scss */
-a, a:visited {
-  color: #d53612;
-  /* on hover */
-}
-/* line 30, ../scss/partials/_layout.scss */
-a:hover, a:focus, a:visited:hover, a:visited:focus {
-  color: #ab2b0e;
-}
-
-/******************************************************************
-H1, H2, H3, H4, H5 STYLES
-******************************************************************/
-/* line 40, ../scss/partials/_layout.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  text-rendering: optimizelegibility;
-  font-weight: 500;
-  /* removing text decoration from all headline links */
-}
-/* line 45, ../scss/partials/_layout.scss */
-h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
-  text-decoration: none;
-}
-
-/* line 50, ../scss/partials/_layout.scss */
-h1, .h1 {
-  font-size: 2.5em;
-  line-height: 1.333em;
-}
-
-/* line 55, ../scss/partials/_layout.scss */
-h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em;
-}
-
-/* line 61, ../scss/partials/_layout.scss */
-h3, .h3 {
-  font-size: 1.125em;
-}
-
-/* line 65, ../scss/partials/_layout.scss */
-h4, .h4 {
-  font-size: 1.1em;
-  font-weight: 700;
-}
-
-/* line 70, ../scss/partials/_layout.scss */
-h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-/*********************
-HEADER STYLES
-*********************/
-/* line 83, ../scss/partials/_layout.scss */
-#logo-wrapper {
-  width: 100%;
-}
-
-/* line 88, ../scss/partials/_layout.scss */
-#logo-link {
-  display: block;
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-}
-
-/* line 97, ../scss/partials/_layout.scss */
-#logo-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*********************
-NAVIGATION STYLES
-*********************/
-/*
-all navs have a .nav class applied via
-the wp_menu function; this is so we can
-easily write one group of styles for
-the navs on the site so our css is cleaner
-and more scalable.
-*/
-/* line 114, ../scss/partials/_layout.scss */
-.nav {
-  background-color: #eee;
-  /* end .menu li */
-}
-/* line 116, ../scss/partials/_layout.scss */
-.nav ul {
+/* line 21, ../scss/partials/_layout.scss */
+.logo-wrapper {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -1.85414em;
   display: inline;
+}
+
+/* line 25, ../scss/partials/_layout.scss */
+.logo-link {
+  width: 28.80065%;
+  float: left;
+  margin-right: 6.79902%;
+  display: inline;
+  margin-left: 35.59967%;
+  margin-right: 35.59967%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* line 32, ../scss/partials/_layout.scss */
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 39, ../scss/partials/_layout.scss */
+.main-nav {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 1.5em;
+}
+/* line 42, ../scss/partials/_layout.scss */
+.main-nav ul {
   margin: 0;
   padding: 0;
   border: 0;
@@ -714,7 +655,7 @@ and more scalable.
   *zoom: 1;
 }
 /* line 49, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-.nav ul li {
+.main-nav ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -726,107 +667,225 @@ and more scalable.
   *display: inline;
   white-space: nowrap;
 }
-/* line 121, ../scss/partials/_layout.scss */
-.nav li a {
+/* line 46, ../scss/partials/_layout.scss */
+.main-nav li a {
   display: block;
+  position: relative;
+  color: #d53612;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
   text-decoration: none;
-  padding: 10px 20px;
-  background-color: #eee;
-  border-bottom: 1px solid #ccc;
-  /*
-  remember this is for mobile ONLY, so there's no need
-  to even declare hover styles here, you can do it in
-  the style.scss file where it's relevant. We want to
-  keep this file as small as possible!
-  */
+  text-transform: uppercase;
+  padding: .5em 1.25em;
+  margin-right: 1.75em;
+}
+/* line 56, ../scss/partials/_layout.scss */
+.main-nav li a:hover, .main-nav li a:focus {
+  color: #472013;
+  background-color: #dfd9d2;
+}
+/* line 59, ../scss/partials/_layout.scss */
+.main-nav li a:hover::before, .main-nav li a:focus::before {
+  opacity: 0;
+  -webkit-transform: translateY(2px) translateX(-2px);
+  -moz-transform: translateY(2px) translateX(-2px);
+  transform: translateY(2px) translateX(-2px);
+}
+/* line 65, ../scss/partials/_layout.scss */
+.main-nav li a:hover::after, .main-nav li a:focus::after {
+  opacity: 1;
+  -webkit-transform: translateY(0px) translateX(0px);
+  -moz-transform: translateY(0px) translateX(0px);
+  transform: translateY(0px) translateX(0px);
+}
+/* line 72, ../scss/partials/_layout.scss */
+.main-nav li a::before, .main-nav li a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #d53612;
+  content: '';
+  -webkit-transition: -webkit-transform 0.15s, opacity 0.15s;
+  -moz-transition: -moz-transform 0.15s, opacity 0.15s;
+  transition: transform 0.15s, opacity 0.15s;
+}
+/* line 84, ../scss/partials/_layout.scss */
+.main-nav li a::after {
+  border-color: #472013;
+  opacity: 0;
+  -webkit-transform: translateY(-2px) translateX(2px);
+  -moz-transform: translateY(-2px) translateX(2px);
+  transform: translateY(-2px) translateX(2px);
 }
 
-/* end .nav */
-/*********************
-POSTS & CONTENT STYLES
-*********************/
-/* line 148, ../scss/partials/_layout.scss */
-#content {
-  margin-top: 2.2em;
-}
-
-/* line 153, ../scss/partials/_layout.scss */
-dd {
-  margin-left: 0;
-  font-size: 0.9em;
-  color: #787878;
-  margin-bottom: 1.5em;
-}
-
-/* line 160, ../scss/partials/_layout.scss */
-img {
-  margin: 0 0 1.5em 0;
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 166, ../scss/partials/_layout.scss */
-video, object {
-  max-width: 100%;
-  height: auto;
-}
-
-/* line 171, ../scss/partials/_layout.scss */
-pre {
-  background: #eee;
-  border: 1px solid #cecece;
-  padding: 10px;
-}
-
-/*********************
-FOOTER STYLES
-*********************/
-/* line 183, ../scss/partials/_layout.scss */
-.footer {
+/* line 98, ../scss/partials/_layout.scss */
+.content {
   width: 100%;
   float: right;
   margin-right: 0;
   *margin-left: -1.85414em;
   display: inline;
-  background-color: #472013;
-  padding: 4em 0;
+  margin-bottom: 3em;
+}
+/* line 101, ../scss/partials/_layout.scss */
+.content img {
+  max-width: 100%;
+  height: auto;
+}
+/* line 106, ../scss/partials/_layout.scss */
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+/* line 111, ../scss/partials/_layout.scss */
+.content a, .content a:visited {
+  color: #d53612;
+}
+/* line 113, ../scss/partials/_layout.scss */
+.content a:hover, .content a:focus, .content a:visited:hover, .content a:visited:focus {
+  color: #ab2b0e;
+}
+/* line 119, ../scss/partials/_layout.scss */
+.content .description p, .content .description ul, .content .description ol, .content .description blockquote {
+  font-size: 1.125em;
+  line-height: 1.86667em;
 }
 
-/* line 189, ../scss/partials/_layout.scss */
-.footer-block {
-  width: 31.59132%;
-  float: left;
-  margin-right: 2.61301%;
-  display: inline;
-  font-size: 1.2em;
-  color: #cdad9a;
+/* line 128, ../scss/partials/_layout.scss */
+.main-footer-wrapper {
+  width: 100%;
+  overflow: hidden;
+  background-color: #472013;
 }
-/* line 184, C:/Ruby192/lib/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
-.footer-block:nth-child(3n) {
+
+/* line 134, ../scss/partials/_layout.scss */
+.main-footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/* line 139, ../scss/partials/_layout.scss */
+.footer-block {
+  width: 100%;
   float: right;
   margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  color: #cdad9a;
 }
-/* line 194, ../scss/partials/_layout.scss */
+/* line 142, ../scss/partials/_layout.scss */
 .footer-block a {
+  color: #d53612;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-/* line 197, ../scss/partials/_layout.scss */
-.footer-block a:hover {
+/* line 146, ../scss/partials/_layout.scss */
+.footer-block a:hover, .footer-block a:focus {
   color: white;
 }
 
 /*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
-/* end .footer-links */
-/* line 1, ../scss/partials/_module.scss */
+ * ******************************************************************
+ * BREAKPOINTS
+ * ******************************************************************
+ */
+@media (min-width: 41.83313em) {
+  /* line 162, ../scss/partials/_layout.scss */
+  .container {
+    max-width: 41.83313em;
+    padding-left: 0.92707em;
+    padding-right: 0.92707em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 168, ../scss/partials/_layout.scss */
+  .logo-link {
+    width: 30.37851%;
+    float: left;
+    margin-right: 4.43223%;
+    margin-left: 34.81074%;
+    margin-right: 34.81074%;
+  }
+}
+@media (min-width: 56.39555em) {
+  /* line 177, ../scss/partials/_layout.scss */
+  .container {
+    max-width: 56.39555em;
+    padding-left: 0.92707em;
+    padding-right: 0.92707em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 183, ../scss/partials/_layout.scss */
+  .logo-link {
+    width: 31.1415%;
+    float: left;
+    margin-right: 3.28774%;
+    margin-left: 34.42925%;
+    margin-right: 34.42925%;
+  }
+
+  /* line 188, ../scss/partials/_layout.scss */
+  .footer-block {
+    width: 31.1415%;
+    float: left;
+    margin-right: 3.28774%;
+  }
+  /* line 184, C:/Ruby192/lib/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .footer-block:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 70.95797em) {
+  /* line 197, ../scss/partials/_layout.scss */
+  .container {
+    max-width: 70.95797em;
+    padding-left: 0.92707em;
+    padding-right: 0.92707em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 38, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* line 203, ../scss/partials/_layout.scss */
+  .logo-link {
+    width: 17.90959%;
+    float: left;
+    margin-right: 2.61301%;
+    margin-left: 41.04521%;
+    margin-right: 41.04521%;
+  }
+
+  /* line 208, ../scss/partials/_layout.scss */
+  .footer-block {
+    width: 31.59132%;
+    float: left;
+    margin-right: 2.61301%;
+  }
+}
+/* line 3, ../scss/partials/_module.scss */
 .arguments {
   width: 100%;
   float: right;
@@ -836,15 +895,206 @@ view.
   margin-bottom: 3em;
 }
 
-/* line 6, ../scss/partials/_module.scss */
+/* line 7, ../scss/partials/_module.scss */
 .argument {
-  width: 31.59132%;
-  float: left;
-  margin-right: 2.61301%;
-  display: inline;
-}
-/* line 184, C:/Ruby192/lib/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
-.argument:nth-child(3n) {
+  width: 100%;
   float: right;
   margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  padding: 1em;
+}
+
+/* line 16, ../scss/partials/_module.scss */
+.previews {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+}
+
+/* line 19, ../scss/partials/_module.scss */
+.preview {
+  margin-bottom: 3em;
+  -moz-border-radius-bottomleft: 1em;
+  -webkit-border-bottom-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  -moz-border-radius-bottomright: 1em;
+  -webkit-border-bottom-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background: #dfd9d2;
+}
+/* line 23, ../scss/partials/_module.scss */
+.preview .preview-header {
+  position: relative;
+}
+/* line 25, ../scss/partials/_module.scss */
+.preview .preview-header .price {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -35px;
+  color: white;
+  background-color: #472013;
+  text-align: center;
+  line-height: 4;
+}
+/* line 37, ../scss/partials/_module.scss */
+.preview .preview-header .price .currency {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: #d53612;
+}
+
+/* line 45, ../scss/partials/_module.scss */
+.preview-image {
+  border-bottom: 7px solid #472013;
+}
+/* line 46, ../scss/partials/_module.scss */
+.preview-image a, .preview-image img {
+  display: block;
+}
+
+/* line 52, ../scss/partials/_module.scss */
+.preview-title {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  font-weight: bold;
+  text-align: center;
+  padding: 2.25em 0 .75em;
+  letter-spacing: 1px;
+}
+/* line 58, ../scss/partials/_module.scss */
+.preview-title a {
+  text-decoration: none;
+}
+
+/* line 65, ../scss/partials/_module.scss */
+.entry {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 2.25em;
+}
+
+/* line 69, ../scss/partials/_module.scss */
+.entry-image {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 2.25em;
+  border-bottom: 15px solid #472013;
+}
+/* line 73, ../scss/partials/_module.scss */
+.entry-image img {
+  display: block;
+}
+
+/* line 77, ../scss/partials/_module.scss */
+.entry-header {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 2.25em;
+}
+/* line 80, ../scss/partials/_module.scss */
+.entry-header .entry-title {
+  color: #d53612;
+  text-align: center;
+}
+/* line 84, ../scss/partials/_module.scss */
+.entry-header .entry-categories {
+  text-align: center;
+}
+
+/* line 89, ../scss/partials/_module.scss */
+.entry-description,
+.entry-ingredients {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 1.5em;
+}
+
+/*
+ * ******************************************************************
+ * BREAKPOINTS
+ * ******************************************************************
+ */
+@media (min-width: 41.83313em) {
+  /* line 104, ../scss/partials/_module.scss */
+  .argument {
+    width: 30.37851%;
+    float: left;
+    margin-right: 4.43223%;
+  }
+  /* line 184, C:/Ruby192/lib/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .argument:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 109, ../scss/partials/_module.scss */
+  .preview {
+    width: 30.37851%;
+    float: left;
+    margin-right: 4.43223%;
+  }
+  /* line 184, C:/Ruby192/lib/ruby/gems/1.9.1/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .preview:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 56.39555em) {
+  /* line 119, ../scss/partials/_module.scss */
+  .argument,
+  .preview {
+    width: 31.1415%;
+    float: left;
+    margin-right: 3.28774%;
+  }
+}
+@media (min-width: 70.95797em) {
+  /* line 128, ../scss/partials/_module.scss */
+  .argument,
+  .preview {
+    width: 31.59132%;
+    float: left;
+    margin-right: 2.61301%;
+  }
+
+  /* line 132, ../scss/partials/_module.scss */
+  .entry-content {
+    width: 58.95479%;
+    float: left;
+    margin-right: 2.61301%;
+    margin-left: 20.5226%;
+    margin-right: 20.5226%;
+  }
+
+  /* line 137, ../scss/partials/_module.scss */
+  .entry-meta {
+    width: 58.95479%;
+    float: left;
+    margin-right: 2.61301%;
+    margin-left: 20.5226%;
+    margin-right: 20.5226%;
+  }
 }

@@ -11,7 +11,7 @@
 		<!-- Google Chrome Frame for IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php wp_title(''); ?></title>
+		<title><?php is_home() ? bloginfo('description') : wp_title(''); ?></title>
 
 		<!-- mobile meta (hooray!) -->
 		<meta name="HandheldFriendly" content="True">
@@ -25,7 +25,7 @@
 			<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 		<![endif]-->
 		<!-- or, set /favicon.ico for IE10 win -->
-		<meta name="msapplication-TileColor" content="#f01d4f">
+		<meta name="msapplication-TileColor" content="#d53612">
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
@@ -61,26 +61,19 @@
 		</script>
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body>
+		<div class="container">
+			<header class="main-header" role="banner">
+				<div class="logo-wrapper">
+					<a class="logo-link" href="<?php echo home_url(); ?>" rel="nofollow" title="Retour à l'accueil">
+						<img class="logo" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-abc.png" alt="<?php bloginfo('name'); ?>">
+					</a>
+				</div>
 
-		<div id="container">
-
-			<header class="header" role="banner">
-
-				<div id="inner-header" class="wrap clearfix">
-
-					<div id="logo-wrapper">
-						<a id="logo-link" href="<?php echo home_url(); ?>" rel="nofollow" title="Retour à l'accueil">
-							<img id="logo-img" src="<?php echo get_template_directory_uri(); ?>/library/images/logo-abc.png" alt="<?php bloginfo('name'); ?>">
-						</a>
-					</div>
-
-					<?php // bloginfo('description'); ?>
-
-					<nav role="navigation" class="nav">
-						<?php bones_main_nav(); ?>
-					</nav>
-
-				</div> <!-- end #inner-header -->
-
-			</header> <!-- end header -->
+				<nav class="main-nav" role="navigation">
+					<?php bones_main_nav(); ?>
+				</nav>
+			</header>
+		</div>
+		
+		<div class="container">

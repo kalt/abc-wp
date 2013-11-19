@@ -1,17 +1,31 @@
 
-
-
 // Susy
-$total-columns  : 15;
+$total-columns  : 6;
 $column-width   : 3em;
 $gutter-width   : $column-width / 1.618;
 $grid-padding   : $gutter-width / 2;
 
 // Typography
-$font-main: "Habibi", Times New Roman, Times, serif;
-$font-alt:  "Raleway", Helvetica, Arial, sans-serif;
+$font-copy: "Habibi", Times New Roman, Times, serif;
+$font-titles:  "Raleway", Helvetica, Arial, sans-serif;
 
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+@include establish-baseline;
 
 // Colors
-$link-color:  #d53612;
+$white: #ffffff;
+$black: #000000;
+$orange: #d53612;
+$brown: #472013;
+$beige: #dfd9d2;
+ 
+$link-color: $orange;
 $link-hover: darken($link-color, 9%);
+
+// Breakpoints
+$breakpoint-small: 9;
+$breakpoint-medium: 12;
+$breakpoint-large: 15;
+// $breakpoint-xlarge: 18;
