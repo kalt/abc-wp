@@ -78,6 +78,7 @@
 	@include span-columns($total-columns omega);
 	@include trailer(1.5);
 	.entry-title {
+		@include adjust-font-size-to(32px, 1.5);
 		color: $orange;
 		text-align: center;
 	}
@@ -88,6 +89,13 @@
 .entry-description,
 .entry-ingredients {
 	@include span-columns($total-columns omega);
+	@include trailer(1);
+}
+
+
+// ------------------------------------------------------------------
+// Archives
+.archive-title {
 	@include trailer(1);
 }
 

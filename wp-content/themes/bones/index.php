@@ -24,9 +24,9 @@
 			</div>
 		</div>
 
-		<?php if (have_posts()) : ?>
+		<?php if (have_posts()): ?>
 		<div class="previews">
-			<?php while (have_posts()) : the_post(); ?>
+			<?php while (have_posts()): the_post(); ?>
 			<article class="preview" id="post-<?php the_ID(); ?>" role="article">
 				<header class="preview-header">
 					<div class="preview-image">

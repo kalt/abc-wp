@@ -12,7 +12,7 @@
 							<?php the_title(); ?>
 						</h1>
 						<div class="entry-categories">
-							Recette classée dans : <?php the_terms($post->ID, 'categories'); ?>
+							Classé dans : <?php the_terms($post->ID, 'categories'); ?>
 						</div>
 					</header>
 

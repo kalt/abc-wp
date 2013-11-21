@@ -667,8 +667,15 @@ body {
   *display: inline;
   white-space: nowrap;
 }
-/* line 46, ../scss/partials/_layout.scss */
+/* line 45, ../scss/partials/_layout.scss */
+.main-nav li {
+  padding: 1em 0;
+}
+/* line 47, ../scss/partials/_layout.scss */
 .main-nav li a {
+  -webkit-box-shadow: 3px 3px 0 #d53612;
+  -moz-box-shadow: 3px 3px 0 #d53612;
+  box-shadow: 3px 3px 0 #d53612;
   display: block;
   position: relative;
   color: #d53612;
@@ -677,50 +684,22 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: .5em 1.25em;
-  margin-right: 1.75em;
+  margin-right: 1.5em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #d53612;
 }
-/* line 56, ../scss/partials/_layout.scss */
+/* line 61, ../scss/partials/_layout.scss */
 .main-nav li a:hover, .main-nav li a:focus {
   color: #472013;
   background-color: #dfd9d2;
-}
-/* line 59, ../scss/partials/_layout.scss */
-.main-nav li a:hover::before, .main-nav li a:focus::before {
-  opacity: 0;
-  -webkit-transform: translateY(2px) translateX(-2px);
-  -moz-transform: translateY(2px) translateX(-2px);
-  transform: translateY(2px) translateX(-2px);
-}
-/* line 65, ../scss/partials/_layout.scss */
-.main-nav li a:hover::after, .main-nav li a:focus::after {
-  opacity: 1;
-  -webkit-transform: translateY(0px) translateX(0px);
-  -moz-transform: translateY(0px) translateX(0px);
-  transform: translateY(0px) translateX(0px);
-}
-/* line 72, ../scss/partials/_layout.scss */
-.main-nav li a::before, .main-nav li a::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 2px solid #d53612;
-  content: '';
-  -webkit-transition: -webkit-transform 0.15s, opacity 0.15s;
-  -moz-transition: -moz-transform 0.15s, opacity 0.15s;
-  transition: transform 0.15s, opacity 0.15s;
-}
-/* line 84, ../scss/partials/_layout.scss */
-.main-nav li a::after {
   border-color: #472013;
-  opacity: 0;
-  -webkit-transform: translateY(-2px) translateX(2px);
-  -moz-transform: translateY(-2px) translateX(2px);
-  transform: translateY(-2px) translateX(2px);
+  -webkit-box-shadow: 3px 3px 0 #472013;
+  -moz-box-shadow: 3px 3px 0 #472013;
+  box-shadow: 3px 3px 0 #472013;
 }
 
-/* line 98, ../scss/partials/_layout.scss */
+/* line 74, ../scss/partials/_layout.scss */
 .content {
   width: 100%;
   float: right;
@@ -729,44 +708,44 @@ body {
   display: inline;
   margin-bottom: 3em;
 }
-/* line 101, ../scss/partials/_layout.scss */
+/* line 77, ../scss/partials/_layout.scss */
 .content img {
   max-width: 100%;
   height: auto;
 }
-/* line 106, ../scss/partials/_layout.scss */
+/* line 82, ../scss/partials/_layout.scss */
 .content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
 }
-/* line 111, ../scss/partials/_layout.scss */
+/* line 87, ../scss/partials/_layout.scss */
 .content a, .content a:visited {
   color: #d53612;
 }
-/* line 113, ../scss/partials/_layout.scss */
+/* line 89, ../scss/partials/_layout.scss */
 .content a:hover, .content a:focus, .content a:visited:hover, .content a:visited:focus {
   color: #ab2b0e;
 }
-/* line 119, ../scss/partials/_layout.scss */
+/* line 95, ../scss/partials/_layout.scss */
 .content .description p, .content .description ul, .content .description ol, .content .description blockquote {
   font-size: 1.125em;
   line-height: 1.86667em;
 }
 
-/* line 128, ../scss/partials/_layout.scss */
+/* line 104, ../scss/partials/_layout.scss */
 .main-footer-wrapper {
   width: 100%;
   overflow: hidden;
   background-color: #472013;
 }
 
-/* line 134, ../scss/partials/_layout.scss */
+/* line 110, ../scss/partials/_layout.scss */
 .main-footer {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
-/* line 139, ../scss/partials/_layout.scss */
+/* line 115, ../scss/partials/_layout.scss */
 .footer-block {
   width: 100%;
   float: right;
@@ -775,13 +754,13 @@ body {
   display: inline;
   color: #cdad9a;
 }
-/* line 142, ../scss/partials/_layout.scss */
+/* line 118, ../scss/partials/_layout.scss */
 .footer-block a {
   color: #d53612;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-/* line 146, ../scss/partials/_layout.scss */
+/* line 122, ../scss/partials/_layout.scss */
 .footer-block a:hover, .footer-block a:focus {
   color: white;
 }
@@ -792,7 +771,7 @@ body {
  * ******************************************************************
  */
 @media (min-width: 41.83313em) {
-  /* line 162, ../scss/partials/_layout.scss */
+  /* line 138, ../scss/partials/_layout.scss */
   .container {
     max-width: 41.83313em;
     padding-left: 0.92707em;
@@ -807,7 +786,7 @@ body {
     clear: both;
   }
 
-  /* line 168, ../scss/partials/_layout.scss */
+  /* line 144, ../scss/partials/_layout.scss */
   .logo-link {
     width: 30.37851%;
     float: left;
@@ -817,7 +796,7 @@ body {
   }
 }
 @media (min-width: 56.39555em) {
-  /* line 177, ../scss/partials/_layout.scss */
+  /* line 153, ../scss/partials/_layout.scss */
   .container {
     max-width: 56.39555em;
     padding-left: 0.92707em;
@@ -832,7 +811,7 @@ body {
     clear: both;
   }
 
-  /* line 183, ../scss/partials/_layout.scss */
+  /* line 159, ../scss/partials/_layout.scss */
   .logo-link {
     width: 31.1415%;
     float: left;
@@ -841,7 +820,7 @@ body {
     margin-right: 34.42925%;
   }
 
-  /* line 188, ../scss/partials/_layout.scss */
+  /* line 164, ../scss/partials/_layout.scss */
   .footer-block {
     width: 31.1415%;
     float: left;
@@ -854,7 +833,7 @@ body {
   }
 }
 @media (min-width: 70.95797em) {
-  /* line 197, ../scss/partials/_layout.scss */
+  /* line 173, ../scss/partials/_layout.scss */
   .container {
     max-width: 70.95797em;
     padding-left: 0.92707em;
@@ -869,7 +848,7 @@ body {
     clear: both;
   }
 
-  /* line 203, ../scss/partials/_layout.scss */
+  /* line 179, ../scss/partials/_layout.scss */
   .logo-link {
     width: 17.90959%;
     float: left;
@@ -878,7 +857,7 @@ body {
     margin-right: 41.04521%;
   }
 
-  /* line 208, ../scss/partials/_layout.scss */
+  /* line 184, ../scss/partials/_layout.scss */
   .footer-block {
     width: 31.59132%;
     float: left;
@@ -1013,15 +992,17 @@ body {
 }
 /* line 80, ../scss/partials/_module.scss */
 .entry-header .entry-title {
+  font-size: 2em;
+  line-height: 1.125em;
   color: #d53612;
   text-align: center;
 }
-/* line 84, ../scss/partials/_module.scss */
+/* line 85, ../scss/partials/_module.scss */
 .entry-header .entry-categories {
   text-align: center;
 }
 
-/* line 89, ../scss/partials/_module.scss */
+/* line 90, ../scss/partials/_module.scss */
 .entry-description,
 .entry-ingredients {
   width: 100%;
@@ -1032,13 +1013,18 @@ body {
   margin-bottom: 1.5em;
 }
 
+/* line 98, ../scss/partials/_module.scss */
+.archive-title {
+  margin-bottom: 1.5em;
+}
+
 /*
  * ******************************************************************
  * BREAKPOINTS
  * ******************************************************************
  */
 @media (min-width: 41.83313em) {
-  /* line 104, ../scss/partials/_module.scss */
+  /* line 112, ../scss/partials/_module.scss */
   .argument {
     width: 30.37851%;
     float: left;
@@ -1050,7 +1036,7 @@ body {
     margin-right: 0;
   }
 
-  /* line 109, ../scss/partials/_module.scss */
+  /* line 117, ../scss/partials/_module.scss */
   .preview {
     width: 30.37851%;
     float: left;
@@ -1063,7 +1049,7 @@ body {
   }
 }
 @media (min-width: 56.39555em) {
-  /* line 119, ../scss/partials/_module.scss */
+  /* line 127, ../scss/partials/_module.scss */
   .argument,
   .preview {
     width: 31.1415%;
@@ -1072,7 +1058,7 @@ body {
   }
 }
 @media (min-width: 70.95797em) {
-  /* line 128, ../scss/partials/_module.scss */
+  /* line 136, ../scss/partials/_module.scss */
   .argument,
   .preview {
     width: 31.59132%;
@@ -1080,7 +1066,7 @@ body {
     margin-right: 2.61301%;
   }
 
-  /* line 132, ../scss/partials/_module.scss */
+  /* line 140, ../scss/partials/_module.scss */
   .entry-content {
     width: 58.95479%;
     float: left;
@@ -1089,7 +1075,7 @@ body {
     margin-right: 20.5226%;
   }
 
-  /* line 137, ../scss/partials/_module.scss */
+  /* line 145, ../scss/partials/_module.scss */
   .entry-meta {
     width: 58.95479%;
     float: left;

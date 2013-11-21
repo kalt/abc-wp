@@ -1,108 +1,66 @@
 <?php get_header(); ?>
 
-			<div id="content">
+	<div class="content" role="main">
+		<h1 class="archive-title">
+			<?php if (is_category()) { ?>
+				<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
+			<?php } elseif (is_tag()) { ?>
+				<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
+			<?php } elseif (is_author()) {
+				global $post;
+				$author_id = $post->post_author;
+			?>
+				<span><?php _e( 'Posts By:', 'bonestheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
+			<?php } elseif (is_day()) { ?>
+				<span><?php _e( 'Daily Archives:', 'bonestheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
+			<?php } elseif (is_month()) { ?>
+				<span><?php _e( 'Monthly Archives:', 'bonestheme' ); ?></span> <?php the_time('F Y'); ?>
+			<?php } elseif (is_year()) { ?>
+				<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
+			<?php } elseif (is_tax('categories')) {
+				global $post;
+				list($cat) = array_values(get_the_terms($post->ID, 'categories'));
+			 ?>
+				Catégorie : <?php echo $cat->name; ?>
+			<?php } ?>
+		</h1>
 
-				<div id="inner-content" class="wrap clearfix">
+		<?php if (have_posts()): ?>
+		<div class="previews">
+			<?php while (have_posts()) : the_post(); ?>
+			<article class="preview" id="post-<?php the_ID(); ?>" role="article">
+				<header class="preview-header">
+					<div class="preview-image">
+						<a href="<?php the_permalink() ?>"><?php the_post_thumbnail('bones-thumb-m'); ?></a>
+					</div> <!-- end article header -->
 
-						<div id="main" class="eightcol first clearfix" role="main">
+					<?php if (get_field('unit_price') > 0): ?>
+					<div class="price unit">
+						<?php echo number_format(get_field('unit_price'), 2, ',', ' '); ?> <span class="currency">€</span>
+					</div>
+					<?php endif; ?>
+				</header>
 
-							<?php if (is_category()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Categorized:', 'bonestheme' ); ?></span> <?php single_cat_title(); ?>
-								</h1>
+				<h2 class="preview-title">
+					<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+						<?php the_title(); ?>
+					</a>
+				</h2>
+			</article>
+			<?php endwhile; ?>
+		</div>
+		<?php endif; ?>
 
-							<?php } elseif (is_tag()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Posts Tagged:', 'bonestheme' ); ?></span> <?php single_tag_title(); ?>
-								</h1>
-
-							<?php } elseif (is_author()) {
-								global $post;
-								$author_id = $post->post_author;
-							?>
-								<h1 class="archive-title h2">
-
-									<span><?php _e( 'Posts By:', 'bonestheme' ); ?></span> <?php the_author_meta('display_name', $author_id); ?>
-
-								</h1>
-							<?php } elseif (is_day()) { ?>
-								<h1 class="archive-title h2">
-									<span><?php _e( 'Daily Archives:', 'bonestheme' ); ?></span> <?php the_time('l, F j, Y'); ?>
-								</h1>
-
-							<?php } elseif (is_month()) { ?>
-									<h1 class="archive-title h2">
-										<span><?php _e( 'Monthly Archives:', 'bonestheme' ); ?></span> <?php the_time('F Y'); ?>
-									</h1>
-
-							<?php } elseif (is_year()) { ?>
-									<h1 class="archive-title h2">
-										<span><?php _e( 'Yearly Archives:', 'bonestheme' ); ?></span> <?php the_time('Y'); ?>
-									</h1>
-							<?php } elseif (is_tax('categories')) {
-								global $post;
-							 ?>
-									<h1 class="archive-title h2">
-										Catégorie : <?php the_terms($post->ID, 'categories'); ?>
-									</h1>
-							<?php } ?>
-
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
-
-								<section class="entry-content clearfix">
-									<header class="article-header">
-										<a href="<?php the_permalink() ?>"><?php the_post_thumbnail( 'bones-thumb-wide-l' ); ?></a>
-									</header> <!-- end article header -->
-
-									<div class="article-categories">
-										<?php the_terms($post->ID, 'categories'); ?>
-									</div>
-
-									<h2 class="h2"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-
-									<div class="entry-excerpt">
-										<?php the_excerpt(); ?>
-									</div>
-								</section> <!-- end article section -->
-							</article> <!-- end article -->
-
-							<?php endwhile; ?>
-
-									<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
-										<?php bones_page_navi(); ?>
-									<?php } else { ?>
-										<nav class="wp-prev-next">
-											<ul class="clearfix">
-												<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
-												<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
-											</ul>
-										</nav>
-									<?php } ?>
-
-							<?php else : ?>
-
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the archive.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
-
-						</div> <!-- end #main -->
-
-						<?php get_sidebar(); ?>
-
-								</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
+		<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
+			<?php bones_page_navi(); ?>
+		<?php } else { ?>
+			<nav class="wp-prev-next">
+				<ul class="clearfix">
+					<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
+					<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
+				</ul>
+			</nav>
+		<?php } ?>
+	</div>
 
 <?php get_footer(); ?>

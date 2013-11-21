@@ -43,7 +43,9 @@ body {
 		@include inline-block-list;
 	}
 	li {
+		padding: 1em 0;
 		a {
+			@include single-box-shadow($hoff: 3px, $voff: 3px, $blur: 0, $color: $orange);
 			display: block;
 			position: relative;
 			color: $orange;
@@ -52,41 +54,15 @@ body {
 			text-decoration: none;
 			text-transform: uppercase;
 			padding: .5em 1.25em;
-			margin-right: 1.75em;
+			margin-right: 1.5em;
+			border-width: 2px;
+			border-style: solid;
+			border-color: $orange;
 			&:hover, &:focus {
 				color: $brown;
 				background-color: $beige;
-				&::before {
-					opacity: 0;
-					-webkit-transform: translateY(2px) translateX(-2px);
-					-moz-transform: translateY(2px) translateX(-2px);
-					transform: translateY(2px) translateX(-2px);
-				}
-				&::after {
-					opacity: 1;
-					-webkit-transform: translateY(0px) translateX(0px);
-					-moz-transform: translateY(0px) translateX(0px);
-					transform: translateY(0px) translateX(0px);
-				}
-			}
-			&::before, &::after {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				border: 2px solid $orange;
-				content: '';
-				-webkit-transition: -webkit-transform 0.15s, opacity 0.15s;
-				-moz-transition: -moz-transform 0.15s, opacity 0.15s;
-				transition: transform 0.15s, opacity 0.15s;
-			}
-			&::after {
 				border-color: $brown;
-				opacity: 0;
-				-webkit-transform: translateY(-2px) translateX(2px);
-				-moz-transform: translateY(-2px) translateX(2px);
-				transform: translateY(-2px) translateX(2px);
+				@include single-box-shadow($hoff: 3px, $voff: 3px, $blur: 0, $color: $brown);
 			}
 		}
 	}
