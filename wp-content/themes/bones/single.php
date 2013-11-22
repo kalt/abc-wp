@@ -12,11 +12,21 @@
 							<?php the_title(); ?>
 						</h1>
 						<div class="entry-categories">
-							Classé dans : <?php the_terms($post->ID, 'categories'); ?>
+							<?php if (has_category()): ?>
+								Classé dans : 
+								<?php 
+								$categories = get_the_category();
+								if ($categories) {
+									foreach ($categories as $category) {
+										echo '<a href="'.get_category_link( $category->term_id ).'">'.$category->cat_name.'</a>';
+									}
+								} ?>
+							<?php else: ?>
+								Classé dans : <?php the_terms($post->ID, 'categories'); ?>
+							<?php endif; ?>
 						</div>
 					</header>
 
-				
 					<div class="entry-description description">
 						<?php the_content(); ?>
 					</div>
@@ -30,6 +40,7 @@
 				</section>
 			</article>
 
+			<?php if (get_fields()): ?>
 			<aside class="entry-meta">
 				<ul class="entry-prices">
 				<?php if (get_field('weight') > 0): ?>
@@ -43,6 +54,7 @@
 				<?php endif; ?>
 				</ul>
 			</aside>
+			<?php endif; ?>
 
 		<?php endwhile; ?>
 

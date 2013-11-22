@@ -44,7 +44,11 @@ body {
 	}
 	li {
 		padding: 1em 0;
+		&:first-child {
+			display: none;
+		}
 		a {
+			@include adjust-font-size-to(14px);
 			@include single-box-shadow($hoff: 3px, $voff: 3px, $blur: 0, $color: $orange);
 			display: block;
 			position: relative;
@@ -53,7 +57,7 @@ body {
 			letter-spacing: 1px;
 			text-decoration: none;
 			text-transform: uppercase;
-			padding: .5em 1.25em;
+			padding: .5em 1.39em;
 			margin-right: 1.5em;
 			border-width: 2px;
 			border-style: solid;
@@ -159,6 +163,14 @@ body {
 	.logo-link {
 		@include span-columns(4);
 		@include squish(4,4);
+	}
+
+	.main-nav {
+		li {
+			&:first-child {
+				display: inline-block;
+			}
+		}
 	}
 
 	.footer-block {
