@@ -144,7 +144,7 @@
 	@include span-columns($total-columns omega);
 	@include padding-trailer(.5);
 	@include trailer(1);
-	color: $orange;
+	color: $brown;
 	border-bottom: 1px solid mix($brown, $beige, 50%);
 	text-align: center
 }
