@@ -3,8 +3,7 @@
 	<div class="main-footer-wrapper">
 		<footer class="main-footer container" role="contentinfo">
 			<div class="footer-block">
-				<?php $contactPage = get_page_by_title("contact"); ?>
-				<p>Passez commande sur la page <a href="<?php echo get_page_link($contactPage->ID); ?>">Contact</a></p>
+				<p>Télécharger le <a href="<?php echo get_permalink(get_page_by_path('bon-de-commande')); ?>">bon de commande</a></p>
 			</div>
 
 			<div class="footer-block">

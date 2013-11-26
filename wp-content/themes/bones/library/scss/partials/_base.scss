@@ -20,12 +20,32 @@ $black: #000000;
 $orange: #d53612;
 $brown: #472013;
 $beige: #dfd9d2;
+$grey: #666;
  
 $link-color: $orange;
-$link-hover: darken($link-color, 9%);
+$link-hover: mix($link-color, $brown, 33%);
 
 // Breakpoints
 $breakpoint-small: 9;
 $breakpoint-medium: 12;
 $breakpoint-large: 15;
 // $breakpoint-xlarge: 18;
+
+// Extends
+%default-button {
+	@include adjust-font-size-to(12px);
+	@include single-box-shadow($hoff: 3px, $voff: 3px, $blur: 0, $color: mix($orange, $brown, 66%));
+	display: inline-block;
+	color: $white;
+	background-color: $orange;
+	font-family: $font-titles;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	padding: .25em 1em;
+	border: 0;
+	&:hover, &:focus {
+		color: $beige;
+		background-color: $brown;
+	}
+}

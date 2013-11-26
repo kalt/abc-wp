@@ -57,7 +57,7 @@ body {
 			letter-spacing: 1px;
 			text-decoration: none;
 			text-transform: uppercase;
-			padding: .5em 1.39em;
+			padding: .5em 1.30em;
 			margin-right: 1.5em;
 			border-width: 2px;
 			border-style: solid;
@@ -88,16 +88,25 @@ body {
 		text-transform: uppercase;
 	}
 
-	a, a:visited {
-		color: $link-color;
-		&:hover, &:focus {
-			color: $link-hover;
-		}
+	h1 {
+		@include adjust-font-size-to(40px, 1.5);
+	}
+
+	h2 {
+		@include adjust-font-size-to(24px);
+		color: $brown;
 	}
 
 	.description {
 		p, ul, ol, blockquote {
 			@include adjust-font-size-to(18px, 1.4);
+			@include trailer(1.5);
+		}
+		a, a:visited {
+			color: $link-color;
+			&:hover, &:focus {
+				color: $link-hover;
+			}
 		}
 	}
 }

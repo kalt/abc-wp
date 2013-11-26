@@ -40,25 +40,29 @@
 			}
 		}
 	}
+	.preview-image {
+		a, img {
+			display: block;
+		}
+		border-bottom: 7px solid $brown;
+	}
+
+	.preview-title {
+		@include adjust-font-size-to(14px);
+		font-weight: bold;
+		text-align: center;
+		padding: 2.25em 0 .75em;
+		letter-spacing: 1px;
+		a, a:visited {
+			text-decoration: none;
+			color: $link-color;
+			&:hover, &:focus {
+				color: $link-hover;
+			}
+		}
+	}
 }
 
-.preview-image {
-	a, img {
-		display: block;
-	}
-	border-bottom: 7px solid $brown;
-}
-
-.preview-title {
-	@include adjust-font-size-to(14px);
-	font-weight: bold;
-	text-align: center;
-	padding: 2.25em 0 .75em;
-	letter-spacing: 1px;
-	a {
-		text-decoration: none;
-	}
-}
 
 // ------------------------------------------------------------------
 // Entry
@@ -78,27 +82,127 @@
 	@include span-columns($total-columns omega);
 	@include trailer(1.5);
 	.entry-title {
-		@include adjust-font-size-to(32px, 1.5);
 		color: $orange;
 		text-align: center;
 	}
 	.entry-categories {
 		text-align: center;
 	}
+	a, a:visited {
+		color: $link-color;
+		&:hover, &:focus {
+			color: $link-hover;
+		}
+	}
 }
 .entry-description,
-.entry-ingredients {
+.entry-ingredients,
+.entry-meta {
 	@include span-columns($total-columns omega);
 	@include trailer(1);
 }
 
+.entry-meta {
+	.unit {
+		@include adjust-font-size-to(32px, 3);
+		@include border-top-radius(.5em);
+		color: $white;
+		background-color: $brown;
+		text-align: center;
+		.currency {
+			@include adjust-font-size-to(12px);
+			color: $orange;
+		}
+	}
+	.weight {
+		@include adjust-font-size-to(18px, 2);
+		@include border-bottom-radius(1em);
+		@include trailer(.5);
+		color: $brown;
+		background-color: $beige;
+		text-align: center;
+	}
+	.per-kilo {
+		@include adjust-font-size-to(14px);
+		@include trailer(1.5);
+		color: $grey;
+		text-align: center;
+	}
+	.action {
+		
+		text-align: center;
+	}
+	.btn {
+		@extend %default-button;
+	}
+}
 
 // ------------------------------------------------------------------
 // Archives
-.archive-title {
+.archive-title,
+.page-title {
+	@include span-columns($total-columns omega);
+	@include padding-trailer(.5);
+	@include trailer(1);
+	color: $orange;
+	border-bottom: 1px solid mix($brown, $beige, 50%);
+	text-align: center
+}
+
+
+// ------------------------------------------------------------------
+// Post summaries
+.summaries {
+	@include span-columns($total-columns omega);
+}
+
+.summary {
+	@include span-columns($total-columns omega);
+	@include trailer(1);
+	border-bottom: 1px solid mix($brown, $beige, 10%);
+	a, a:visited {
+		color: $link-color;
+		&:hover, &:focus {
+			color: $link-hover;
+		}
+	}
+}
+
+.summary-date {
+	color: $brown;
+	font-style: italic;
+}
+
+.summary-title a {
+	text-decoration: none;
+}
+
+
+
+// ------------------------------------------------------------------
+// Contact7 Form
+.wpcf7-form {
+	@include span-columns($total-columns omega);
 	@include trailer(1);
 }
 
+.content .wpcf7-form p {
+	@include trailer(.5);
+	font-weight: bold;
+}
+
+.wpcf7-submit {
+	@extend %default-button;
+}
+
+.contact-infos {
+	@include span-columns($total-columns omega);
+	@include trailer(1);
+	.legal {
+		@include adjust-font-size-to(14px);
+		color: $grey;
+	}
+}
 
 /*
  * ******************************************************************
@@ -137,14 +241,41 @@
 		@include span-columns($total-columns / 3);
 	}
 
-	.entry-content {
+
+	.entry-description {
 		@include span-columns(9);
-		@include squish(3,3);
+		@include pre(3);
 	}
 
 	.entry-meta {
-		@include span-columns(9);
-		@include squish(3,3);
+		@include span-columns(3 omega);
+	}
+
+
+	.archive-title,
+	.page-title,
+	.page-description,
+	.summaries {
+		@include span-columns($total-columns - 4 omega);
+		@include squish(2,2);
+	}
+
+	.summary-meta {
+		@include span-columns(3, $total-columns - 4);
+		padding-top: 2em;
+	}
+
+	.summary-content {
+		@include span-columns(8 omega, $total-columns - 4);
+	}
+
+
+	.wpcf7-form {
+		@include span-columns(6, $total-columns - 4);
+	}
+
+	.contact-infos {
+		@include span-columns(5 omega, $total-columns - 4);
 	}
 }
 

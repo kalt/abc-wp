@@ -21,7 +21,7 @@
 				global $post;
 				list($cat) = array_values(get_the_terms($post->ID, 'categories'));
 			 ?>
-				Catégorie : <?php echo $cat->name; ?>
+				Les <?php echo $cat->name; ?>
 			<?php } ?>
 		</h1>
 

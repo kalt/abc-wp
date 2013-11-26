@@ -1,55 +1,29 @@
 <?php get_header(); ?>
 
-			<div id="content">
+<?php if (have_posts()): while (have_posts()) : the_post(); ?>
+	<div class="content" role="main">
+		<article class="page" id="post-<?php the_ID(); ?>" role="article">
+			<div class="page-content">
+				<header class="page-header">
+					<h1 class="page-title"><?php the_title(); ?></h1>
+				</header>
+				<div class="page-description description">
+					<?php the_content(); ?>
+				</div>
+			</div>
+		</article>
+	</div>
+<?php endwhile; endif; ?>
 
-				<div id="inner-content" class="wrap clearfix">
-
-						<div id="main" class="eightcol first clearfix" role="main">
-
-							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
-
-								<header class="article-header">
-
-									<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
-
-								</header> <!-- end article header -->
-
-								<section class="entry-content clearfix" itemprop="articleBody">
-									<?php the_content(); ?>
-							</section> <!-- end article section -->
-
-								<footer class="article-footer">
-
-								</footer> <!-- end article footer -->
-
-								<?php comments_template(); ?>
-
-							</article> <!-- end article -->
-
-							<?php endwhile; else : ?>
-
-									<article id="post-not-found" class="hentry clearfix">
-										<header class="article-header">
-											<h1><?php _e( 'Oops, Post Not Found!', 'bonestheme' ); ?></h1>
-										</header>
-										<section class="entry-content">
-											<p><?php _e( 'Uh Oh. Something is missing. Try double checking things.', 'bonestheme' ); ?></p>
-										</section>
-										<footer class="article-footer">
-												<p><?php _e( 'This is the error message in the page.php template.', 'bonestheme' ); ?></p>
-										</footer>
-									</article>
-
-							<?php endif; ?>
-
-						</div> <!-- end #main -->
-
-						<?php get_sidebar(); ?>
-
-				</div> <!-- end #inner-content -->
-
-			</div> <!-- end #content -->
+<?php if ( function_exists( 'bones_page_navi' ) ) { ?>
+	<?php bones_page_navi(); ?>
+<?php } else { ?>
+	<nav class="wp-prev-next">
+		<ul class="clearfix">
+			<li class="prev-link"><?php next_posts_link( __( '&laquo; Older Entries', 'bonestheme' )) ?></li>
+			<li class="next-link"><?php previous_posts_link( __( 'Newer Entries &raquo;', 'bonestheme' )) ?></li>
+		</ul>
+	</nav>
+<?php } ?>
 
 <?php get_footer(); ?>

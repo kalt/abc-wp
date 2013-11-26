@@ -121,44 +121,38 @@ a:hover {
  */
 /* line 125, ../scss/partials/_normalize.scss */
 h1 {
-  font-size: 2em;
   margin: 0.67em 0;
 }
 
-/* line 130, ../scss/partials/_normalize.scss */
+/* line 129, ../scss/partials/_normalize.scss */
 h2 {
-  font-size: 1.5em;
   margin: 0.83em 0;
 }
 
-/* line 135, ../scss/partials/_normalize.scss */
+/* line 133, ../scss/partials/_normalize.scss */
 h3 {
-  font-size: 1.17em;
   margin: 1em 0;
 }
 
-/* line 140, ../scss/partials/_normalize.scss */
+/* line 137, ../scss/partials/_normalize.scss */
 h4 {
-  font-size: 1em;
   margin: 1.33em 0;
 }
 
-/* line 145, ../scss/partials/_normalize.scss */
+/* line 141, ../scss/partials/_normalize.scss */
 h5 {
-  font-size: 0.83em;
   margin: 1.67em 0;
 }
 
-/* line 150, ../scss/partials/_normalize.scss */
+/* line 145, ../scss/partials/_normalize.scss */
 h6 {
-  font-size: 0.75em;
   margin: 2.33em 0;
 }
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome.
  */
-/* line 159, ../scss/partials/_normalize.scss */
+/* line 153, ../scss/partials/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -166,13 +160,13 @@ abbr[title] {
 /*
  * Addresses style set to `bolder` in FF3+, S4/5, Chrome.
  */
-/* line 168, ../scss/partials/_normalize.scss */
+/* line 162, ../scss/partials/_normalize.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-/* line 172, ../scss/partials/_normalize.scss */
+/* line 166, ../scss/partials/_normalize.scss */
 blockquote {
   margin: 1em 40px;
 }
@@ -180,7 +174,7 @@ blockquote {
 /*
  * Addresses styling not present in S5, Chrome.
  */
-/* line 180, ../scss/partials/_normalize.scss */
+/* line 174, ../scss/partials/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -188,7 +182,7 @@ dfn {
 /*
  * Addresses styling not present in IE6/7/8/9.
  */
-/* line 188, ../scss/partials/_normalize.scss */
+/* line 182, ../scss/partials/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -197,7 +191,7 @@ mark {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 198, ../scss/partials/_normalize.scss */
+/* line 192, ../scss/partials/_normalize.scss */
 p,
 pre {
   margin: 1em 0;
@@ -207,7 +201,7 @@ pre {
  * Corrects font family set oddly in IE6, S4/5, Chrome.
  * en.wikipedia.org/wiki/User:Davidgothberg/Test59
  */
-/* line 210, ../scss/partials/_normalize.scss */
+/* line 204, ../scss/partials/_normalize.scss */
 code,
 kbd,
 pre,
@@ -220,7 +214,7 @@ samp {
 /*
  * Improves readability of pre-formatted text in all browsers.
  */
-/* line 220, ../scss/partials/_normalize.scss */
+/* line 214, ../scss/partials/_normalize.scss */
 pre {
   white-space: pre;
   white-space: pre-wrap;
@@ -230,7 +224,7 @@ pre {
 /*
  * Addresses CSS quotes not supported in IE6/7.
  */
-/* line 230, ../scss/partials/_normalize.scss */
+/* line 224, ../scss/partials/_normalize.scss */
 q {
   quotes: none;
 }
@@ -238,14 +232,14 @@ q {
 /*
  * Addresses `quotes` property not supported in S4.
  */
-/* line 239, ../scss/partials/_normalize.scss */
+/* line 233, ../scss/partials/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none;
 }
 
-/* line 244, ../scss/partials/_normalize.scss */
+/* line 238, ../scss/partials/_normalize.scss */
 small {
   font-size: 75%;
 }
@@ -254,7 +248,7 @@ small {
  * Prevents `sub` and `sup` affecting `line-height` in all browsers.
  * gist.github.com/413930
  */
-/* line 254, ../scss/partials/_normalize.scss */
+/* line 248, ../scss/partials/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -263,12 +257,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 261, ../scss/partials/_normalize.scss */
+/* line 255, ../scss/partials/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 265, ../scss/partials/_normalize.scss */
+/* line 259, ../scss/partials/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -276,36 +270,7 @@ sub {
 /* ==========================================================================
    Lists
    ========================================================================== */
-/*
- * Addresses margins set differently in IE6/7.
- */
-/* line 280, ../scss/partials/_normalize.scss */
-dl,
-menu,
-ol,
-ul {
-  margin: 1em 0;
-}
-
-/* line 284, ../scss/partials/_normalize.scss */
-dd {
-  margin: 0 0 0 40px;
-}
-
-/*
- * Addresses paddings set differently in IE6/7.
- */
-/* line 294, ../scss/partials/_normalize.scss */
-menu,
-ol,
-ul {
-  padding: 0 0 0 40px;
-}
-
-/*
- * Corrects list images handled incorrectly in IE7.
- */
-/* line 303, ../scss/partials/_normalize.scss */
+/* line 268, ../scss/partials/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -320,7 +285,7 @@ nav ol {
  * 2. Improves image quality when scaled in IE7.
  *    code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
  */
-/* line 318, ../scss/partials/_normalize.scss */
+/* line 283, ../scss/partials/_normalize.scss */
 img {
   border: 0;
   /* 1 */
@@ -331,7 +296,7 @@ img {
 /*
  * Corrects overflow displayed oddly in IE9.
  */
-/* line 327, ../scss/partials/_normalize.scss */
+/* line 292, ../scss/partials/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -342,7 +307,7 @@ svg:not(:root) {
 /*
  * Addresses margin not present in IE6/7/8/9, S5, O11.
  */
-/* line 339, ../scss/partials/_normalize.scss */
+/* line 304, ../scss/partials/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -353,7 +318,7 @@ figure {
 /*
  * Corrects margin displayed oddly in IE6/7.
  */
-/* line 351, ../scss/partials/_normalize.scss */
+/* line 316, ../scss/partials/_normalize.scss */
 form {
   margin: 0;
 }
@@ -361,7 +326,7 @@ form {
 /*
  * Define consistent border, margin, and padding.
  */
-/* line 359, ../scss/partials/_normalize.scss */
+/* line 324, ../scss/partials/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -373,7 +338,7 @@ fieldset {
  * 2. Corrects text not wrapping in FF3.
  * 3. Corrects alignment displayed oddly in IE6/7.
  */
-/* line 371, ../scss/partials/_normalize.scss */
+/* line 336, ../scss/partials/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -389,7 +354,7 @@ legend {
  * 2. Addresses margins set differently in IE6/7, FF3+, S5, Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 387, ../scss/partials/_normalize.scss */
+/* line 352, ../scss/partials/_normalize.scss */
 button,
 input,
 select,
@@ -408,7 +373,7 @@ textarea {
  * Addresses FF3/4 setting `line-height` on `input` using `!important` in the
  * UA stylesheet.
  */
-/* line 400, ../scss/partials/_normalize.scss */
+/* line 365, ../scss/partials/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -423,7 +388,7 @@ input {
  * 4. Removes inner spacing in IE7 without affecting normal text inputs.
  *    Known issue: inner spacing remains in IE6.
  */
-/* line 417, ../scss/partials/_normalize.scss */
+/* line 382, ../scss/partials/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -439,7 +404,7 @@ input[type="submit"] {
 /*
  * Re-set default cursor for disabled elements.
  */
-/* line 428, ../scss/partials/_normalize.scss */
+/* line 393, ../scss/partials/_normalize.scss */
 button[disabled],
 input[disabled] {
   cursor: default;
@@ -451,7 +416,7 @@ input[disabled] {
  * 3. Removes excess padding in IE7.
  *    Known issue: excess padding remains in IE6.
  */
-/* line 440, ../scss/partials/_normalize.scss */
+/* line 405, ../scss/partials/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -469,7 +434,7 @@ input[type="radio"] {
  * 2. Addresses `box-sizing` set to `border-box` in S5, Chrome (include `-moz`
  *    to future-proof).
  */
-/* line 453, ../scss/partials/_normalize.scss */
+/* line 418, ../scss/partials/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -482,7 +447,7 @@ input[type="search"] {
 /*
  * Removes inner padding and search cancel button in S5, Chrome on OS X.
  */
-/* line 465, ../scss/partials/_normalize.scss */
+/* line 430, ../scss/partials/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -491,7 +456,7 @@ input[type="search"]::-webkit-search-decoration {
 /*
  * Removes inner padding and border in FF3+.
  */
-/* line 474, ../scss/partials/_normalize.scss */
+/* line 439, ../scss/partials/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -502,7 +467,7 @@ input::-moz-focus-inner {
  * 1. Removes default vertical scrollbar in IE6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 484, ../scss/partials/_normalize.scss */
+/* line 449, ../scss/partials/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -516,7 +481,7 @@ textarea {
 /*
  * Remove most spacing between table cells.
  */
-/* line 497, ../scss/partials/_normalize.scss */
+/* line 462, ../scss/partials/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -528,7 +493,7 @@ I added these extra styles as a more personalized reset. Feel free
 to remove them if you like or add your own. If you want to update
 the normalize styles, make sure to edit from this point up.
 ******************************************************************/
-/* line 510, ../scss/partials/_normalize.scss */
+/* line 475, ../scss/partials/_normalize.scss */
 p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
@@ -536,37 +501,30 @@ p {
   hyphens: auto;
 }
 
-/* line 517, ../scss/partials/_normalize.scss */
+/* line 482, ../scss/partials/_normalize.scss */
 b, strong, .strong {
   font-weight: bold;
 }
 
-/* line 519, ../scss/partials/_normalize.scss */
+/* line 484, ../scss/partials/_normalize.scss */
 dfn, em, .em {
   font-style: italic;
 }
 
-/* line 521, ../scss/partials/_normalize.scss */
+/* line 486, ../scss/partials/_normalize.scss */
 small, .small {
   font-size: 75%;
 }
 
-/* line 523, ../scss/partials/_normalize.scss */
+/* line 488, ../scss/partials/_normalize.scss */
 ul, ol {
   padding: 0;
   list-style-type: none;
 }
 
-/* line 528, ../scss/partials/_normalize.scss */
-dd {
+/* line 493, ../scss/partials/_normalize.scss */
+p, ul, ol, blockquote, dd {
   margin: 0;
-}
-
-/* line 534, ../scss/partials/_normalize.scss */
-.sidebar ul,
-.sidebar ol,
-.commentlist {
-  list-style: none;
 }
 
 /* line 61, C:/Ruby192/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
@@ -578,6 +536,29 @@ dd {
 html {
   font-size: 16px;
   line-height: 1.5em;
+}
+
+/* line 35, ../scss/partials/_base.scss */
+.entry-meta .btn, .wpcf7-submit {
+  font-size: 0.75em;
+  line-height: 2em;
+  -webkit-box-shadow: 3px 3px 0 #a42e12;
+  -moz-box-shadow: 3px 3px 0 #a42e12;
+  box-shadow: 3px 3px 0 #a42e12;
+  display: inline-block;
+  color: white;
+  background-color: #d53612;
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: .25em 1em;
+  border: 0;
+}
+/* line 47, ../scss/partials/_base.scss */
+.entry-meta .btn:hover, .wpcf7-submit:hover, .entry-meta .btn:focus, .wpcf7-submit:focus {
+  color: #dfd9d2;
+  background-color: #472013;
 }
 
 /* line 3, ../scss/partials/_layout.scss */
@@ -689,7 +670,7 @@ body {
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: .5em 1.39em;
+  padding: .5em 1.30em;
   margin-right: 1.5em;
   border-width: 2px;
   border-style: solid;
@@ -725,33 +706,45 @@ body {
   text-transform: uppercase;
 }
 /* line 91, ../scss/partials/_layout.scss */
-.content a, .content a:visited {
-  color: #d53612;
+.content h1 {
+  font-size: 2.5em;
+  line-height: 0.9em;
 }
-/* line 93, ../scss/partials/_layout.scss */
-.content a:hover, .content a:focus, .content a:visited:hover, .content a:visited:focus {
-  color: #ab2b0e;
+/* line 95, ../scss/partials/_layout.scss */
+.content h2 {
+  font-size: 1.5em;
+  line-height: 2em;
+  color: #472013;
 }
-/* line 99, ../scss/partials/_layout.scss */
+/* line 101, ../scss/partials/_layout.scss */
 .content .description p, .content .description ul, .content .description ol, .content .description blockquote {
   font-size: 1.125em;
   line-height: 1.86667em;
+  margin-bottom: 2.25em;
+}
+/* line 105, ../scss/partials/_layout.scss */
+.content .description a, .content .description a:visited {
+  color: #d53612;
+}
+/* line 107, ../scss/partials/_layout.scss */
+.content .description a:hover, .content .description a:focus, .content .description a:visited:hover, .content .description a:visited:focus {
+  color: #752712;
 }
 
-/* line 108, ../scss/partials/_layout.scss */
+/* line 117, ../scss/partials/_layout.scss */
 .main-footer-wrapper {
   width: 100%;
   overflow: hidden;
   background-color: #472013;
 }
 
-/* line 114, ../scss/partials/_layout.scss */
+/* line 123, ../scss/partials/_layout.scss */
 .main-footer {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
-/* line 119, ../scss/partials/_layout.scss */
+/* line 128, ../scss/partials/_layout.scss */
 .footer-block {
   width: 100%;
   float: right;
@@ -760,13 +753,13 @@ body {
   display: inline;
   color: #cdad9a;
 }
-/* line 122, ../scss/partials/_layout.scss */
+/* line 131, ../scss/partials/_layout.scss */
 .footer-block a {
   color: #d53612;
   text-decoration: none;
   border-bottom: 1px dotted;
 }
-/* line 126, ../scss/partials/_layout.scss */
+/* line 135, ../scss/partials/_layout.scss */
 .footer-block a:hover, .footer-block a:focus {
   color: white;
 }
@@ -777,7 +770,7 @@ body {
  * ******************************************************************
  */
 @media (min-width: 41.83313em) {
-  /* line 142, ../scss/partials/_layout.scss */
+  /* line 151, ../scss/partials/_layout.scss */
   .container {
     max-width: 41.83313em;
     padding-left: 0.92707em;
@@ -792,7 +785,7 @@ body {
     clear: both;
   }
 
-  /* line 148, ../scss/partials/_layout.scss */
+  /* line 157, ../scss/partials/_layout.scss */
   .logo-link {
     width: 30.37851%;
     float: left;
@@ -802,7 +795,7 @@ body {
   }
 }
 @media (min-width: 56.39555em) {
-  /* line 157, ../scss/partials/_layout.scss */
+  /* line 166, ../scss/partials/_layout.scss */
   .container {
     max-width: 56.39555em;
     padding-left: 0.92707em;
@@ -817,7 +810,7 @@ body {
     clear: both;
   }
 
-  /* line 163, ../scss/partials/_layout.scss */
+  /* line 172, ../scss/partials/_layout.scss */
   .logo-link {
     width: 31.1415%;
     float: left;
@@ -826,12 +819,12 @@ body {
     margin-right: 34.42925%;
   }
 
-  /* line 170, ../scss/partials/_layout.scss */
+  /* line 179, ../scss/partials/_layout.scss */
   .main-nav li:first-child {
     display: inline-block;
   }
 
-  /* line 176, ../scss/partials/_layout.scss */
+  /* line 185, ../scss/partials/_layout.scss */
   .footer-block {
     width: 31.1415%;
     float: left;
@@ -844,7 +837,7 @@ body {
   }
 }
 @media (min-width: 70.95797em) {
-  /* line 185, ../scss/partials/_layout.scss */
+  /* line 194, ../scss/partials/_layout.scss */
   .container {
     max-width: 70.95797em;
     padding-left: 0.92707em;
@@ -859,7 +852,7 @@ body {
     clear: both;
   }
 
-  /* line 191, ../scss/partials/_layout.scss */
+  /* line 200, ../scss/partials/_layout.scss */
   .logo-link {
     width: 17.90959%;
     float: left;
@@ -868,7 +861,7 @@ body {
     margin-right: 41.04521%;
   }
 
-  /* line 196, ../scss/partials/_layout.scss */
+  /* line 205, ../scss/partials/_layout.scss */
   .footer-block {
     width: 31.59132%;
     float: left;
@@ -943,18 +936,16 @@ body {
   line-height: 2em;
   color: #d53612;
 }
-
-/* line 45, ../scss/partials/_module.scss */
-.preview-image {
+/* line 43, ../scss/partials/_module.scss */
+.preview .preview-image {
   border-bottom: 7px solid #472013;
 }
-/* line 46, ../scss/partials/_module.scss */
-.preview-image a, .preview-image img {
+/* line 44, ../scss/partials/_module.scss */
+.preview .preview-image a, .preview .preview-image img {
   display: block;
 }
-
-/* line 52, ../scss/partials/_module.scss */
-.preview-title {
+/* line 50, ../scss/partials/_module.scss */
+.preview .preview-title {
   font-size: 0.875em;
   line-height: 1.71429em;
   font-weight: bold;
@@ -962,12 +953,17 @@ body {
   padding: 2.25em 0 .75em;
   letter-spacing: 1px;
 }
-/* line 58, ../scss/partials/_module.scss */
-.preview-title a {
+/* line 56, ../scss/partials/_module.scss */
+.preview .preview-title a, .preview .preview-title a:visited {
   text-decoration: none;
+  color: #d53612;
+}
+/* line 59, ../scss/partials/_module.scss */
+.preview .preview-title a:hover, .preview .preview-title a:focus, .preview .preview-title a:visited:hover, .preview .preview-title a:visited:focus {
+  color: #752712;
 }
 
-/* line 65, ../scss/partials/_module.scss */
+/* line 69, ../scss/partials/_module.scss */
 .entry {
   width: 100%;
   float: right;
@@ -977,7 +973,7 @@ body {
   margin-bottom: 2.25em;
 }
 
-/* line 69, ../scss/partials/_module.scss */
+/* line 73, ../scss/partials/_module.scss */
 .entry-image {
   width: 100%;
   float: right;
@@ -987,12 +983,12 @@ body {
   margin-bottom: 2.25em;
   border-bottom: 15px solid #472013;
 }
-/* line 73, ../scss/partials/_module.scss */
+/* line 77, ../scss/partials/_module.scss */
 .entry-image img {
   display: block;
 }
 
-/* line 77, ../scss/partials/_module.scss */
+/* line 81, ../scss/partials/_module.scss */
 .entry-header {
   width: 100%;
   float: right;
@@ -1001,21 +997,28 @@ body {
   display: inline;
   margin-bottom: 2.25em;
 }
-/* line 80, ../scss/partials/_module.scss */
+/* line 84, ../scss/partials/_module.scss */
 .entry-header .entry-title {
-  font-size: 2em;
-  line-height: 1.125em;
   color: #d53612;
   text-align: center;
 }
-/* line 85, ../scss/partials/_module.scss */
+/* line 88, ../scss/partials/_module.scss */
 .entry-header .entry-categories {
   text-align: center;
 }
+/* line 91, ../scss/partials/_module.scss */
+.entry-header a, .entry-header a:visited {
+  color: #d53612;
+}
+/* line 93, ../scss/partials/_module.scss */
+.entry-header a:hover, .entry-header a:focus, .entry-header a:visited:hover, .entry-header a:visited:focus {
+  color: #752712;
+}
 
-/* line 90, ../scss/partials/_module.scss */
+/* line 100, ../scss/partials/_module.scss */
 .entry-description,
-.entry-ingredients {
+.entry-ingredients,
+.entry-meta {
   width: 100%;
   float: right;
   margin-right: 0;
@@ -1024,9 +1027,138 @@ body {
   margin-bottom: 1.5em;
 }
 
-/* line 98, ../scss/partials/_module.scss */
-.archive-title {
+/* line 106, ../scss/partials/_module.scss */
+.entry-meta .unit {
+  font-size: 2em;
+  line-height: 2.25em;
+  -moz-border-radius-topleft: 0.5em;
+  -webkit-border-top-left-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+  -moz-border-radius-topright: 0.5em;
+  -webkit-border-top-right-radius: 0.5em;
+  border-top-right-radius: 0.5em;
+  color: white;
+  background-color: #472013;
+  text-align: center;
+}
+/* line 112, ../scss/partials/_module.scss */
+.entry-meta .unit .currency {
+  font-size: 0.75em;
+  line-height: 2em;
+  color: #d53612;
+}
+/* line 117, ../scss/partials/_module.scss */
+.entry-meta .weight {
+  font-size: 1.125em;
+  line-height: 2.66667em;
+  -moz-border-radius-bottomleft: 1em;
+  -webkit-border-bottom-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+  -moz-border-radius-bottomright: 1em;
+  -webkit-border-bottom-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  margin-bottom: 0.75em;
+  color: #472013;
+  background-color: #dfd9d2;
+  text-align: center;
+}
+/* line 125, ../scss/partials/_module.scss */
+.entry-meta .per-kilo {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  margin-bottom: 2.25em;
+  color: #666666;
+  text-align: center;
+}
+/* line 131, ../scss/partials/_module.scss */
+.entry-meta .action {
+  text-align: center;
+}
+
+/* line 143, ../scss/partials/_module.scss */
+.archive-title,
+.page-title {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  padding-bottom: 0.75em;
   margin-bottom: 1.5em;
+  color: #d53612;
+  border-bottom: 1px solid #937c72;
+  text-align: center;
+}
+
+/* line 155, ../scss/partials/_module.scss */
+.summaries {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+}
+
+/* line 159, ../scss/partials/_module.scss */
+.summary {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid #cfc6be;
+}
+/* line 163, ../scss/partials/_module.scss */
+.summary a, .summary a:visited {
+  color: #d53612;
+}
+/* line 165, ../scss/partials/_module.scss */
+.summary a:hover, .summary a:focus, .summary a:visited:hover, .summary a:visited:focus {
+  color: #752712;
+}
+
+/* line 171, ../scss/partials/_module.scss */
+.summary-date {
+  color: #472013;
+  font-style: italic;
+}
+
+/* line 176, ../scss/partials/_module.scss */
+.summary-title a {
+  text-decoration: none;
+}
+
+/* line 184, ../scss/partials/_module.scss */
+.wpcf7-form {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 1.5em;
+}
+
+/* line 189, ../scss/partials/_module.scss */
+.content .wpcf7-form p {
+  margin-bottom: 0.75em;
+  font-weight: bold;
+}
+
+/* line 198, ../scss/partials/_module.scss */
+.contact-infos {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.85414em;
+  display: inline;
+  margin-bottom: 1.5em;
+}
+/* line 201, ../scss/partials/_module.scss */
+.contact-infos .legal {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  color: #666666;
 }
 
 /*
@@ -1035,7 +1167,7 @@ body {
  * ******************************************************************
  */
 @media (min-width: 41.83313em) {
-  /* line 112, ../scss/partials/_module.scss */
+  /* line 216, ../scss/partials/_module.scss */
   .argument {
     width: 30.37851%;
     float: left;
@@ -1047,7 +1179,7 @@ body {
     margin-right: 0;
   }
 
-  /* line 117, ../scss/partials/_module.scss */
+  /* line 221, ../scss/partials/_module.scss */
   .preview {
     width: 30.37851%;
     float: left;
@@ -1060,7 +1192,7 @@ body {
   }
 }
 @media (min-width: 56.39555em) {
-  /* line 127, ../scss/partials/_module.scss */
+  /* line 231, ../scss/partials/_module.scss */
   .argument,
   .preview {
     width: 31.1415%;
@@ -1069,7 +1201,7 @@ body {
   }
 }
 @media (min-width: 70.95797em) {
-  /* line 136, ../scss/partials/_module.scss */
+  /* line 240, ../scss/partials/_module.scss */
   .argument,
   .preview {
     width: 31.59132%;
@@ -1077,21 +1209,59 @@ body {
     margin-right: 2.61301%;
   }
 
-  /* line 140, ../scss/partials/_module.scss */
-  .entry-content {
+  /* line 245, ../scss/partials/_module.scss */
+  .entry-description {
     width: 58.95479%;
     float: left;
     margin-right: 2.61301%;
     margin-left: 20.5226%;
-    margin-right: 20.5226%;
   }
 
-  /* line 145, ../scss/partials/_module.scss */
+  /* line 250, ../scss/partials/_module.scss */
   .entry-meta {
-    width: 58.95479%;
+    width: 17.90959%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 258, ../scss/partials/_module.scss */
+  .archive-title,
+  .page-title,
+  .page-description,
+  .summaries {
+    width: 72.63653%;
+    float: right;
+    margin-right: 0;
+    margin-left: 13.68174%;
+    margin-right: 13.68174%;
+  }
+
+  /* line 263, ../scss/partials/_module.scss */
+  .summary-meta {
+    width: 24.65645%;
     float: left;
-    margin-right: 2.61301%;
-    margin-left: 20.5226%;
-    margin-right: 20.5226%;
+    margin-right: 3.59738%;
+    padding-top: 2em;
+  }
+
+  /* line 268, ../scss/partials/_module.scss */
+  .summary-content {
+    width: 71.74617%;
+    float: right;
+    margin-right: 0;
+  }
+
+  /* line 273, ../scss/partials/_module.scss */
+  .wpcf7-form {
+    width: 52.91028%;
+    float: left;
+    margin-right: 3.59738%;
+  }
+
+  /* line 277, ../scss/partials/_module.scss */
+  .contact-infos {
+    width: 43.49234%;
+    float: right;
+    margin-right: 0;
   }
 }
