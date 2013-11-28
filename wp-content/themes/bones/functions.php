@@ -166,4 +166,13 @@ function bones_wpsearch($form) {
 } // don't remove this bracket!
 
 
-?>
+
+//Making jQuery Google API
+function modify_jquery() {
+	if (!is_admin()) {
+		wp_deregister_script('jquery');
+		wp_register_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', false, '1.10.2');
+		wp_enqueue_script('jquery');
+	}
+}
+add_action('init', 'modify_jquery');
